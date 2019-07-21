@@ -1,0 +1,83 @@
+
+.dashboard {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+}
+
+.sidebar {
+    width: 350px;
+    height: auto;
+    background-color: white;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    .logo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+        height: auto;
+        border-bottom: 1px solid $backgroundSidebar;
+    }
+    .user-profile {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        .name {
+            margin-top: 15px;
+            color: $backgroundColor;
+        }
+    }
+    .menu {
+        ul {
+            list-style: none;
+            list-style-type: none;
+            padding: 0;
+            li {
+                border-top: 1px solid $backgroundSidebar;
+                height: 50px;
+                background-repeat: no-repeat;
+                background-size: 30px 30px;
+                background-position: 10% 50%;
+                &:hover {
+                    background-color: $backgroundSidebar;
+                    a { color: $backgroundColor; }
+                    cursor: pointer;
+                    border-right: 5px solid $backgroundColor;
+                }
+                a {
+                    color: $backgroundColor;
+                    &:hover {
+                        color: $backgroundColor;
+                        text-decoration: none;
+                    }
+                    position: relative;
+                    top: 10px;
+                    float: left;
+                    padding-left: 80px;
+                    width: 100%;
+                    text-align: left;
+                }
+                font-size: 20px;
+            }
+            li.info {
+                background-image: url('../assests/info.png');
+            }
+            li.logout {
+                background-image: url('../assests/logout.png');
+                border-bottom: 1px solid $backgroundSidebar;
+            }
+            li.home-icon {
+                background-image: url('../assests/dashboard.png');
+            }
+            li.change-password {
+                background-image: url('../assests/changepw.png');
+            }
+            li.contract {
+                background-image: url('../assests/contract.png');
+            }
+            li.payment-history {
+                background-image: url('../assests/history.png');
+            }
+        }
+    }
+}
